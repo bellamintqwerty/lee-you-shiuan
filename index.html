@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Birthday Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="home-screen"></div>
+  <main class="game">
+
+    <header class="topbar">
+      <span id="scene-name">場景名稱</span>
+      <button id="bag-button" type="button">
+        🎒 背包 <span id="item-count">0</span>
+      </button>
+    </header>
+
+    <section id="scene" class="scene">
+      <!-- 互動物件由 JavaScript 產生 -->
+    </section>
+
+    <section class="message-box">
+      <p id="message">
+        點擊場景中的物件，開始探索。
+      </p>
+    </section>
+
+    <section id="inventory" class="inventory" hidden>
+      <h2>我的背包</h2>
+      <div id="inventory-items"></div>
+    </section>
+
+    <section id="puzzle" class="puzzle" hidden>
+      <h2 id="puzzle-title">解開封印</h2>
+      <p id="puzzle-hint"></p>
+      <input id="answer" type="text"
+             placeholder="輸入密碼">
+      <button id="submit-answer" type="button">
+        確認
+      </button>
+      <button id="close-puzzle" type="button">
+        返回
+      </button>
+    </section>
+
+  </main>
+</body>
+</html>
